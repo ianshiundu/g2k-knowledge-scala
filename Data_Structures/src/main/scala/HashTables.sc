@@ -22,3 +22,9 @@ def checkVoter(name: String): Unit = {
 
 checkVoter("ian")
 checkVoter("ian")
+
+var graph = Map[String, List[String]]()
+
+graph += ("you" -> List("Alice", "Bob", "Claire"))
+
+println(graph("you"))
