@@ -1,9 +1,11 @@
-var statusCodes = Map[String, Double]()
+var statusCodes = Map[String, Int]()
 
 statusCodes += ("Not Found" -> 404)
 statusCodes += ("OK" -> 200)
 statusCodes += ("Found" -> 302)
 statusCodes += ("No Content" -> 204)
+
+statusCodes.keys
 
 println(statusCodes("Not Found"))
 

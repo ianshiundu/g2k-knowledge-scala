@@ -1,5 +1,4 @@
 import scala.collection.mutable
-import scala.collection.mutable.Queue
 
 var graph = Map[String, List[String]]()
 
