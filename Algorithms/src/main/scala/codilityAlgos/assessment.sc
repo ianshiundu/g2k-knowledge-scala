@@ -45,6 +45,8 @@ val zipList = A2.zip(B2).filter { case (a, b) => b > a || a > b}
 zipList.map { x => if (x._1 < x._2) x._1 else x._2 }.distinct.min
 
 
+val lis = List(1,2,3,4)
+lis.dropRight(1)
 
 
 //zipList.reduceLeft((a,b) => )

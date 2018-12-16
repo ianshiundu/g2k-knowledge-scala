@@ -10,3 +10,14 @@ def solution(x: Int, y: Int, d: Int): Int = {
 solution(10, 85, 30)
 
 solution(5, 10, 5)
+
+def solution2(x: Int, y: Int, d: Int): Int = {
+  if (x <= y) {
+    val distanceBetweenXY = y - x
+    if (distanceBetweenXY % d == 0) distanceBetweenXY/d
+    else (distanceBetweenXY/d) + 1
+
+  } else {
+    throw new Exception("X can not be Greater than Y!")
+  }
+}
